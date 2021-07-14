@@ -1,0 +1,5482 @@
+[
+    {
+        "id": "83aaa528.bd6ef8",
+        "type": "tab",
+        "label": "Main",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "1bf3fce1.efe1bb",
+        "type": "tab",
+        "label": "Display",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "55a9bdab.3c435c",
+        "type": "tab",
+        "label": "Advertencias",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "81f37a56.e8a1c",
+        "type": "tab",
+        "label": "Status",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ec3d8487.9eaea",
+        "type": "tab",
+        "label": "Histórico",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "3413d786.b10f5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#183579",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#29283f",
+                    "value": "#183579",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#183579",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#183579",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#333333",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#183579",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "IoTBESS Central",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "true",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "31a5c6c7.aa419a",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "7db924dd.24d0b4",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "3412602a.9af6d8",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "",
+        "servername": "",
+        "verifyservercert": true
+    },
+    {
+        "id": "e7c46d5e.a1283",
+        "type": "ui_tab",
+        "name": "Sensor de Teto",
+        "icon": "call_made",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d359727b.434b88",
+        "type": "ui_tab",
+        "name": "Sensor de Chão",
+        "icon": "call_received",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "234813e3.cc7bcc",
+        "type": "ui_tab",
+        "name": "Status",
+        "icon": "assignment",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "17554e72.c6e322",
+        "type": "ui_group",
+        "name": "Teto 1",
+        "tab": "e7c46d5e.a1283",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "557d5d4c.88aa0c",
+        "type": "ui_group",
+        "name": "Chão 1",
+        "tab": "d359727b.434b88",
+        "order": 1,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "770ed9d7.147e8",
+        "type": "ui_group",
+        "name": "Status",
+        "tab": "234813e3.cc7bcc",
+        "order": 1,
+        "disp": true,
+        "width": 21,
+        "collapse": false
+    },
+    {
+        "id": "abf40919.1f7348",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "78de3bac.6045fc",
+        "type": "ui_group",
+        "name": "Teto 2",
+        "tab": "e7c46d5e.a1283",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "c3726d3b.461768",
+        "type": "ui_group",
+        "name": "Chão 2",
+        "tab": "d359727b.434b88",
+        "order": 2,
+        "disp": true,
+        "width": 7,
+        "collapse": false
+    },
+    {
+        "id": "ec94c48d.3cd1e8",
+        "type": "ui_tab",
+        "name": "Advertências",
+        "icon": "warning",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4ef6ed78.8e4b24",
+        "type": "ui_tab",
+        "name": "Histórico",
+        "icon": "history",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "a9b4c957.659808",
+        "type": "ui_group",
+        "name": "Últimas 24 horas",
+        "tab": "4ef6ed78.8e4b24",
+        "order": 1,
+        "disp": true,
+        "width": 21,
+        "collapse": false
+    },
+    {
+        "id": "d9653907.eaf768",
+        "type": "ui_group",
+        "name": "Advertências",
+        "tab": "ec94c48d.3cd1e8",
+        "order": 1,
+        "disp": true,
+        "width": 21,
+        "collapse": false
+    },
+    {
+        "id": "122abf5d.b3e0d1",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 2,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "edaed62c.b157c8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e5fd6f93.7d3d48",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f66a44e8.1fc33",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "586e2306.795bb4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "ce096566.39a8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f80b360a.2d6bb8",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "7594eaa9.b194a4",
+        "type": "ui_spacer",
+        "name": "spacer",
+        "group": "a9b4c957.659808",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e7fe9a8d.206778",
+        "type": "ui_chart",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "17554e72.c6e322",
+        "order": 5,
+        "width": 7,
+        "height": 4,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 750,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2d3e0291.fccb06",
+        "type": "ui_gauge",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "17554e72.c6e322",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#185f79",
+            "#f9d511",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "95",
+        "x": 720,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "8b777234.1ef0f8",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "17554e72.c6e322",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Fumaça",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 720,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "5fe4ac6.d8d3ad4",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "17554e72.c6e322",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Bateria",
+        "format": "{{msg.payload}}%",
+        "layout": "col-center",
+        "x": 720,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "5835423f.300f04",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "17554e72.c6e322",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "[H{{\"2\".sub()}}]",
+        "format": "{{msg.payload}} ppm",
+        "layout": "col-center",
+        "x": 710,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c66e752b.144c78",
+        "type": "link in",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "links": [
+            "6c2a0533.745d7c"
+        ],
+        "x": 155,
+        "y": 340,
+        "wires": [
+            [
+                "36e8fe06.729452",
+                "f188e2e7.2aded8",
+                "8a118573.9915f8",
+                "bab42d8d.576dc",
+                "3638f5.92b8a70c",
+                "2d099c50.d5b964"
+            ]
+        ]
+    },
+    {
+        "id": "2908de2.7da3722",
+        "type": "link out",
+        "z": "83aaa528.bd6ef8",
+        "name": "Teto2_out",
+        "links": [
+            "7ebea47e.50ebdc",
+            "e5678eb8.ecfb2",
+            "8af722b5.db85",
+            "b7e08488.76a1d8",
+            "f374afe8.08d6b8",
+            "86047665.089ad8",
+            "4ae62512.005474"
+        ],
+        "x": 695,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "74eb8f00.b4d1c8",
+        "type": "link out",
+        "z": "83aaa528.bd6ef8",
+        "name": "Chao1_out",
+        "links": [
+            "3af91350.1ec82c",
+            "33c57143.3a4b26",
+            "1ad8f3b3.8c08c4",
+            "c1783224.c1dfc8",
+            "96e79c1e.6fef98",
+            "6cc402b.b1ba37c"
+        ],
+        "x": 695,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "642c23c5.bc26b4",
+        "type": "link out",
+        "z": "83aaa528.bd6ef8",
+        "name": "Chao2_out",
+        "links": [
+            "d2782904.decd2",
+            "b5293991.594d4",
+            "6df8b13d.35c7c8",
+            "d2d1b6c7.761dc",
+            "1e0e6041.c15f78",
+            "45d0ba5b.9039f4"
+        ],
+        "x": 695,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "6c2a0533.745d7c",
+        "type": "link out",
+        "z": "83aaa528.bd6ef8",
+        "name": "Teto1_out",
+        "links": [
+            "c66e752b.144c78",
+            "f2f49486.f20a68",
+            "3fcb08a3.91756",
+            "3a387a69.d5c9ce"
+        ],
+        "x": 695,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b4ce6c6e.e43fd8",
+        "type": "mqtt in",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "topic": "bess/iot-sensors",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "abf40919.1f7348",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 220,
+        "y": 300,
+        "wires": [
+            [
+                "479cb675.ccbb08"
+            ]
+        ]
+    },
+    {
+        "id": "aea9b0a9.edad38",
+        "type": "status",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "scope": [
+            "b4ce6c6e.e43fd8"
+        ],
+        "x": 200,
+        "y": 120,
+        "wires": [
+            [
+                "5e235035.0aa548"
+            ]
+        ]
+    },
+    {
+        "id": "5e235035.0aa548",
+        "type": "function",
+        "z": "83aaa528.bd6ef8",
+        "name": "Status MQTT",
+        "func": "switch (msg.status.text) {\n    case \"node-red:common.status.connected\":\n        msg.payload = \"Conectado ao broker MQTT\";\n        break;\n    case \"node-red:common.status.disconnected\":\n        msg.payload = \"Não conectado ao broker MQTT\";\n        break;\n    case \"node-red:common.status.connecting\":\n        msg.payload = \"Tentando conectar ao broker MQTT\";\n        break;\n    default:\n        break;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 120,
+        "wires": [
+            [
+                "3a4f433d.7790dc",
+                "d4083fc3.d9cfc"
+            ]
+        ]
+    },
+    {
+        "id": "479cb675.ccbb08",
+        "type": "json",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 410,
+        "y": 300,
+        "wires": [
+            [
+                "3871c495.2ddf74"
+            ]
+        ]
+    },
+    {
+        "id": "3871c495.2ddf74",
+        "type": "switch",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "property": "payload.DeviceInfo.ID",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "T001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "T002",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "C001",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "C002",
+                "vt": "str"
+            }
+        ],
+        "checkall": "false",
+        "repair": false,
+        "outputs": 4,
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "6c2a0533.745d7c"
+            ],
+            [
+                "2908de2.7da3722"
+            ],
+            [
+                "74eb8f00.b4d1c8"
+            ],
+            [
+                "642c23c5.bc26b4"
+            ]
+        ]
+    },
+    {
+        "id": "3638f5.92b8a70c",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.DeviceInfo.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 140,
+        "wires": [
+            [
+                "f9173075.a98be"
+            ]
+        ]
+    },
+    {
+        "id": "bab42d8d.576dc",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.H2_H2S",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 220,
+        "wires": [
+            [
+                "3835ee84.30017a"
+            ]
+        ]
+    },
+    {
+        "id": "36e8fe06.729452",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "7295e3da.71fcc4"
+            ]
+        ]
+    },
+    {
+        "id": "f188e2e7.2aded8",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 380,
+        "wires": [
+            [
+                "f998df01.d5af78"
+            ]
+        ]
+    },
+    {
+        "id": "8a118573.9915f8",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.SmokeDetection_Flood",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 460,
+        "wires": [
+            [
+                "9b241a98.bd60b8"
+            ]
+        ]
+    },
+    {
+        "id": "8f2e1e01.90f86",
+        "type": "file",
+        "z": "ec3d8487.9eaea",
+        "name": "Salva dados na hora atual",
+        "filename": "",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 920,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8b4065d9.526d68",
+        "type": "inject",
+        "z": "ec3d8487.9eaea",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "60",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 440,
+        "wires": [
+            [
+                "dfaf61c.53dcda"
+            ]
+        ]
+    },
+    {
+        "id": "89ab66ed.c131e",
+        "type": "exec",
+        "z": "ec3d8487.9eaea",
+        "command": "rm",
+        "addpay": "payload",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "20",
+        "oldrc": false,
+        "name": "Apaga hora do dia anterior",
+        "x": 780,
+        "y": 440,
+        "wires": [
+            [],
+            [],
+            [
+                "9db0a113.177f"
+            ]
+        ]
+    },
+    {
+        "id": "f2f49486.f20a68",
+        "type": "link in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "links": [
+            "6c2a0533.745d7c"
+        ],
+        "x": 115,
+        "y": 120,
+        "wires": [
+            [
+                "cfef7439.f6be78"
+            ]
+        ]
+    },
+    {
+        "id": "8af722b5.db85",
+        "type": "link in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "links": [
+            "2908de2.7da3722"
+        ],
+        "x": 115,
+        "y": 200,
+        "wires": [
+            [
+                "64487b3e.26a71c"
+            ]
+        ]
+    },
+    {
+        "id": "33c57143.3a4b26",
+        "type": "link in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "links": [
+            "74eb8f00.b4d1c8"
+        ],
+        "x": 115,
+        "y": 280,
+        "wires": [
+            [
+                "e3a22f63.98c8b"
+            ]
+        ]
+    },
+    {
+        "id": "b5293991.594d4",
+        "type": "link in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "links": [
+            "642c23c5.bc26b4"
+        ],
+        "x": 115,
+        "y": 360,
+        "wires": [
+            [
+                "7b5d7901.6e72a8"
+            ]
+        ]
+    },
+    {
+        "id": "3b5a4f51.7b31a",
+        "type": "comment",
+        "z": "ec3d8487.9eaea",
+        "name": "Escrita do histórico em arquivos externos",
+        "info": "",
+        "x": 200,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "37f3c4e3.b035b4",
+        "type": "comment",
+        "z": "ec3d8487.9eaea",
+        "name": "Leitura do histórico em arquivos externos",
+        "info": "",
+        "x": 200,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "f909c40f.065c5",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Hora atual",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar path = \"/home/pi/Documents/IoTBESS-Central/History/\";\n\nmsg.filename=path+\"Time_\"+hh+\"h.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 120,
+        "wires": [
+            [
+                "8f2e1e01.90f86"
+            ]
+        ]
+    },
+    {
+        "id": "a7e372a4.f7d8a8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Hora atual",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar path = \"/home/pi/Documents/IoTBESS-Central/History/\";\n\nmsg.filename=path+\"Time_\"+hh+\"h.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 200,
+        "wires": [
+            [
+                "8f2e1e01.90f86"
+            ]
+        ]
+    },
+    {
+        "id": "c14e8c78.e1e31",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Hora atual",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar path = \"/home/pi/Documents/IoTBESS-Central/History/\";\n\nmsg.filename=path+\"Time_\"+hh+\"h.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 360,
+        "wires": [
+            [
+                "8f2e1e01.90f86"
+            ]
+        ]
+    },
+    {
+        "id": "7231555c.82e4fc",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Hora atual",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar path = \"/home/pi/Documents/IoTBESS-Central/History/\";\n\nmsg.filename=path+\"Time_\"+hh+\"h.txt\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 280,
+        "wires": [
+            [
+                "8f2e1e01.90f86"
+            ]
+        ]
+    },
+    {
+        "id": "518422ac.3ba384",
+        "type": "rbe",
+        "z": "ec3d8487.9eaea",
+        "name": "Mudou",
+        "func": "rbe",
+        "gap": "",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "payload",
+        "x": 540,
+        "y": 440,
+        "wires": [
+            [
+                "89ab66ed.c131e"
+            ]
+        ]
+    },
+    {
+        "id": "dfaf61c.53dcda",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Hora atual",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar path = \"/home/pi/Documents/IoTBESS-Central/History/\";\n\nreturn {payload:path+\"Time_\"+hh+\"h.txt\"};",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 350,
+        "y": 440,
+        "wires": [
+            [
+                "518422ac.3ba384"
+            ]
+        ]
+    },
+    {
+        "id": "74af340d.bcda2c",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_0h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 640,
+        "wires": [
+            [
+                "2078a730.bb6808"
+            ]
+        ]
+    },
+    {
+        "id": "835ca741.c17018",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_1h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 680,
+        "wires": [
+            [
+                "e623629f.22bd98"
+            ]
+        ]
+    },
+    {
+        "id": "a76a839d.264a6",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_2h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 720,
+        "wires": [
+            [
+                "b8bf2fd2.5c9b28"
+            ]
+        ]
+    },
+    {
+        "id": "43d1d48f.288a0c",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_3h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 760,
+        "wires": [
+            [
+                "ffbb4396.418aa8"
+            ]
+        ]
+    },
+    {
+        "id": "cf0223e3.6a712",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_4h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 800,
+        "wires": [
+            [
+                "66fe19bf.6b8da8"
+            ]
+        ]
+    },
+    {
+        "id": "50e3665a.52d18",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_5h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 840,
+        "wires": [
+            [
+                "aa815a85.f88cb"
+            ]
+        ]
+    },
+    {
+        "id": "bedb1426.aca62",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_6h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 880,
+        "wires": [
+            [
+                "7bbaf42d.ba2d34"
+            ]
+        ]
+    },
+    {
+        "id": "c166b38f.4a88d8",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_7h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 920,
+        "wires": [
+            [
+                "3d9a3ad2.b4257e"
+            ]
+        ]
+    },
+    {
+        "id": "f0049ec1.219a3",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_8h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 960,
+        "wires": [
+            [
+                "4d081ee8.a33b18"
+            ]
+        ]
+    },
+    {
+        "id": "8a1ce53c.d68868",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_9h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1000,
+        "wires": [
+            [
+                "ca15196.7444668"
+            ]
+        ]
+    },
+    {
+        "id": "3ae174a0.d47074",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_10h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1040,
+        "wires": [
+            [
+                "f47e32ff.6de9d"
+            ]
+        ]
+    },
+    {
+        "id": "cec069ed.199f88",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_11h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1080,
+        "wires": [
+            [
+                "6f4d4710.1d56f8"
+            ]
+        ]
+    },
+    {
+        "id": "e2600279.b69078",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_12h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1120,
+        "wires": [
+            [
+                "1023d75a.504689"
+            ]
+        ]
+    },
+    {
+        "id": "88018d9f.b39db8",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_13h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1160,
+        "wires": [
+            [
+                "c38e59f8.411608"
+            ]
+        ]
+    },
+    {
+        "id": "5a39ae7a.11bd1",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_14h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1200,
+        "wires": [
+            [
+                "124d683f.25f698"
+            ]
+        ]
+    },
+    {
+        "id": "ad0e5ba4.952f48",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_15h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1240,
+        "wires": [
+            [
+                "d57534cf.8ffd78"
+            ]
+        ]
+    },
+    {
+        "id": "8712161e.dc42",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_16h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1280,
+        "wires": [
+            [
+                "26f4ac9b.8427c4"
+            ]
+        ]
+    },
+    {
+        "id": "be4ca43.1d54658",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_17h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1320,
+        "wires": [
+            [
+                "6e104243.6bb804"
+            ]
+        ]
+    },
+    {
+        "id": "57425c3b.4f561c",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_18h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1360,
+        "wires": [
+            [
+                "7957085b.7ba028"
+            ]
+        ]
+    },
+    {
+        "id": "6c7348ae.0359",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_19h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1400,
+        "wires": [
+            [
+                "9d08e529.416d9"
+            ]
+        ]
+    },
+    {
+        "id": "1ebf5994.dd3d16",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_20h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1440,
+        "wires": [
+            [
+                "7a3ad14e.322f98"
+            ]
+        ]
+    },
+    {
+        "id": "5fd7e459.26bfb4",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_21h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1480,
+        "wires": [
+            [
+                "a3d88fbb.2ee4b8"
+            ]
+        ]
+    },
+    {
+        "id": "f957579e.3d0548",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_22h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1520,
+        "wires": [
+            [
+                "5d85500a.fd2918"
+            ]
+        ]
+    },
+    {
+        "id": "36fab74c.17eaa8",
+        "type": "file in",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "filename": "/home/pi/Documents/IoTBESS-Central/History/Time_23h.txt",
+        "format": "lines",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "x": 580,
+        "y": 1560,
+        "wires": [
+            [
+                "b1cf5152.933588"
+            ]
+        ]
+    },
+    {
+        "id": "5bc06b26.5b20b4",
+        "type": "inject",
+        "z": "ec3d8487.9eaea",
+        "name": "Trigger",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "600",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 1120,
+        "wires": [
+            [
+                "74af340d.bcda2c",
+                "835ca741.c17018",
+                "a76a839d.264a6",
+                "43d1d48f.288a0c",
+                "cf0223e3.6a712",
+                "50e3665a.52d18",
+                "c166b38f.4a88d8",
+                "f0049ec1.219a3",
+                "8a1ce53c.d68868",
+                "3ae174a0.d47074",
+                "cec069ed.199f88",
+                "e2600279.b69078",
+                "88018d9f.b39db8",
+                "5a39ae7a.11bd1",
+                "ad0e5ba4.952f48",
+                "8712161e.dc42",
+                "be4ca43.1d54658",
+                "57425c3b.4f561c",
+                "6c7348ae.0359",
+                "1ebf5994.dd3d16",
+                "5fd7e459.26bfb4",
+                "f957579e.3d0548",
+                "36fab74c.17eaa8"
+            ]
+        ]
+    },
+    {
+        "id": "67500013.6dcce",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1280,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "be3e4407.e95fd",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 640,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "45942eca.a2111",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 680,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "cd096e3a.6f9ba8",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 720,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "dec075d5.c73e18",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 760,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "ae0874f6.6d5168",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 800,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "ba87e2bd.aca008",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 840,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "88871d4c.154c18",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 880,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "2d4782e8.7d485e",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 920,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "7c2ac9ba.0bc7e8",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 960,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "e0e92375.0bef28",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1000,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "48effa4d.bf2c8c",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1040,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "2c343dc8.0337b2",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1080,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "cacc415.7b2794",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1120,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "f30c51f9.958c8",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1160,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "609b17f3.cf03f8",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1200,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "73605916.50891",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1240,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "18f19b80.77aa9d",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1320,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "29ca2ecc.194b12",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1360,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "d41f0c01.bf364",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1400,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "ef0398f.b553068",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1440,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "388af197.c0fcbe",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1480,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "b4bf14bb.6a6eb",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1520,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "83f58ad.e4cff78",
+        "type": "json",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 1070,
+        "y": 1560,
+        "wires": [
+            [
+                "40e96718.d85c8"
+            ]
+        ]
+    },
+    {
+        "id": "2d099c50.d5b964",
+        "type": "trigger",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "39eb230b.0073b4"
+            ]
+        ]
+    },
+    {
+        "id": "bf19f433.760a58",
+        "type": "comment",
+        "z": "83aaa528.bd6ef8",
+        "name": "Entrada de dados",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "15406907.aca8bf",
+        "type": "comment",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Teto",
+        "info": "",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "3a4f433d.7790dc",
+        "type": "debug",
+        "z": "83aaa528.bd6ef8",
+        "name": "Status MQTT",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 600,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "e84c107a.35ff3",
+        "type": "catch",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "scope": null,
+        "uncaught": false,
+        "x": 200,
+        "y": 480,
+        "wires": [
+            [
+                "4b05194.30356e8",
+                "464b8233.933bcc"
+            ]
+        ]
+    },
+    {
+        "id": "d4083fc3.d9cfc",
+        "type": "link out",
+        "z": "83aaa528.bd6ef8",
+        "name": "",
+        "links": [],
+        "x": 695,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "4b05194.30356e8",
+        "type": "file",
+        "z": "83aaa528.bd6ef8",
+        "name": "Error log",
+        "filename": "error_log.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 400,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "464b8233.933bcc",
+        "type": "debug",
+        "z": "83aaa528.bd6ef8",
+        "name": "Error log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 400,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "9db0a113.177f",
+        "type": "debug",
+        "z": "ec3d8487.9eaea",
+        "name": "Return code",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1030,
+        "y": 440,
+        "wires": []
+    },
+    {
+        "id": "d5dd2dc4.362c3",
+        "type": "ui_chart",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "78de3bac.6045fc",
+        "order": 5,
+        "width": 7,
+        "height": 4,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 750,
+        "y": 820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "df7b56e7.8d5408",
+        "type": "ui_gauge",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "78de3bac.6045fc",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#185f79",
+            "#f9d511",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "95",
+        "x": 720,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "e26cb0cb.b8fb4",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "78de3bac.6045fc",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Fumaça",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 720,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "45736264.0cc154",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "78de3bac.6045fc",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Bateria",
+        "format": "{{msg.payload}}%",
+        "layout": "col-center",
+        "x": 720,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "ce3c5486.ddd488",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "78de3bac.6045fc",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "[H{{\"2\".sub()}}]",
+        "format": "{{msg.payload}} ppm",
+        "layout": "col-center",
+        "x": 710,
+        "y": 740,
+        "wires": []
+    },
+    {
+        "id": "b7e08488.76a1d8",
+        "type": "link in",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "links": [
+            "2908de2.7da3722"
+        ],
+        "x": 155,
+        "y": 860,
+        "wires": [
+            [
+                "ac3978c4.e24958",
+                "6db2d2f0.e2e944",
+                "1c91059f.0e7dc2",
+                "b21c3ce7.fc85f",
+                "25ffc245.95569e",
+                "a08abe43.f42148"
+            ]
+        ]
+    },
+    {
+        "id": "25ffc245.95569e",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.DeviceInfo.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 660,
+        "wires": [
+            [
+                "ed833378.34a4d"
+            ]
+        ]
+    },
+    {
+        "id": "b21c3ce7.fc85f",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.H2_H2S",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 740,
+        "wires": [
+            [
+                "5e9e8b83.069e3c"
+            ]
+        ]
+    },
+    {
+        "id": "ac3978c4.e24958",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 820,
+        "wires": [
+            [
+                "3557e538.25999a"
+            ]
+        ]
+    },
+    {
+        "id": "6db2d2f0.e2e944",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 900,
+        "wires": [
+            [
+                "14c698d6.99fe27"
+            ]
+        ]
+    },
+    {
+        "id": "1c91059f.0e7dc2",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.SmokeDetection_Flood",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 980,
+        "wires": [
+            [
+                "4c8f3ba5.1edffc"
+            ]
+        ]
+    },
+    {
+        "id": "a08abe43.f42148",
+        "type": "trigger",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 370,
+        "y": 1060,
+        "wires": [
+            [
+                "5ff0849e.23229c"
+            ]
+        ]
+    },
+    {
+        "id": "5e02983.a966768",
+        "type": "ui_chart",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "557d5d4c.88aa0c",
+        "order": 5,
+        "width": 7,
+        "height": 4,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1850,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c95ca66c.ed2b6",
+        "type": "ui_gauge",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "557d5d4c.88aa0c",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#185f79",
+            "#f9d511",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "95",
+        "x": 1820,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "82d04c61.86ff28",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "557d5d4c.88aa0c",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Alagamento",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1830,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "80a606e3.e54d1",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "557d5d4c.88aa0c",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Bateria",
+        "format": "{{msg.payload}}%",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cd7bbb7d.b6f4c8",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "557d5d4c.88aa0c",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "[H{{\"2\".sub()}}S]",
+        "format": "{{msg.payload}} ppm",
+        "layout": "col-center",
+        "x": 1810,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "c1783224.c1dfc8",
+        "type": "link in",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "links": [
+            "74eb8f00.b4d1c8"
+        ],
+        "x": 1255,
+        "y": 340,
+        "wires": [
+            [
+                "69250b59.3d524c",
+                "30e47beb.09df2c",
+                "7a3a16f5.c936d",
+                "d63f6c39.ff9e6",
+                "b44c7372.b22f28",
+                "48847cad.1f6744"
+            ]
+        ]
+    },
+    {
+        "id": "b44c7372.b22f28",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.DeviceInfo.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 140,
+        "wires": [
+            [
+                "6c188bab.4d767c"
+            ]
+        ]
+    },
+    {
+        "id": "d63f6c39.ff9e6",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.H2_H2S",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 220,
+        "wires": [
+            [
+                "c53654bf.6a598"
+            ]
+        ]
+    },
+    {
+        "id": "69250b59.3d524c",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 300,
+        "wires": [
+            [
+                "329caf05.a2997"
+            ]
+        ]
+    },
+    {
+        "id": "30e47beb.09df2c",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 380,
+        "wires": [
+            [
+                "cd068706.e32d18"
+            ]
+        ]
+    },
+    {
+        "id": "7a3a16f5.c936d",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.SmokeDetection_Flood",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 460,
+        "wires": [
+            [
+                "1d51362b.c851d2"
+            ]
+        ]
+    },
+    {
+        "id": "48847cad.1f6744",
+        "type": "trigger",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1470,
+        "y": 540,
+        "wires": [
+            [
+                "fae0529c.dd8bd"
+            ]
+        ]
+    },
+    {
+        "id": "2b8dbc96.9176bc",
+        "type": "comment",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Chão",
+        "info": "",
+        "x": 1190,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "965e59f5.76a0d8",
+        "type": "ui_chart",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "c3726d3b.461768",
+        "order": 5,
+        "width": 7,
+        "height": 4,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": true,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511",
+            "#f9d511"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1850,
+        "y": 840,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7582faee.431744",
+        "type": "ui_gauge",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "group": "c3726d3b.461768",
+        "order": 2,
+        "width": 4,
+        "height": 3,
+        "gtype": "gage",
+        "title": "Umidade",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#185f79",
+            "#f9d511",
+            "#ca3838"
+        ],
+        "seg1": "70",
+        "seg2": "95",
+        "x": 1820,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "c986730a.0b4a7",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "c3726d3b.461768",
+        "order": 4,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Alagamento",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "x": 1830,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "117518c0.27a937",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "c3726d3b.461768",
+        "order": 1,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Bateria",
+        "format": "{{msg.payload}}%",
+        "layout": "col-center",
+        "x": 1820,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "c469f399.7eea58",
+        "type": "ui_text",
+        "z": "1bf3fce1.efe1bb",
+        "group": "c3726d3b.461768",
+        "order": 3,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "[H{{\"2\".sub()}}S]",
+        "format": "{{msg.payload}} ppm",
+        "layout": "col-center",
+        "x": 1810,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "d2d1b6c7.761dc",
+        "type": "link in",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "links": [
+            "642c23c5.bc26b4"
+        ],
+        "x": 1255,
+        "y": 880,
+        "wires": [
+            [
+                "5ece9c4d.da5bdc",
+                "ec26a0ab.4ebd",
+                "b2a11e9a.aba91",
+                "fcb73f18.c1ebb8",
+                "69b88895.1f8068",
+                "2c8f47ce.06de48"
+            ]
+        ]
+    },
+    {
+        "id": "69b88895.1f8068",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.DeviceInfo.Battery",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 680,
+        "wires": [
+            [
+                "aa87e784.5e4e1"
+            ]
+        ]
+    },
+    {
+        "id": "fcb73f18.c1ebb8",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.H2_H2S",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 760,
+        "wires": [
+            [
+                "978e059d.7eb07"
+            ]
+        ]
+    },
+    {
+        "id": "5ece9c4d.da5bdc",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Temperature",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 840,
+        "wires": [
+            [
+                "c0f047d6.203b4"
+            ]
+        ]
+    },
+    {
+        "id": "ec26a0ab.4ebd",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.Humidity",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 920,
+        "wires": [
+            [
+                "9f8b870e.d9cef"
+            ]
+        ]
+    },
+    {
+        "id": "b2a11e9a.aba91",
+        "type": "change",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.Data.SmokeDetection_Flood",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1490,
+        "y": 1000,
+        "wires": [
+            [
+                "64bdc266.0081f4"
+            ]
+        ]
+    },
+    {
+        "id": "2c8f47ce.06de48",
+        "type": "trigger",
+        "z": "1bf3fce1.efe1bb",
+        "name": "",
+        "op1": "0",
+        "op2": "1",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "2",
+        "extend": true,
+        "overrideDelay": false,
+        "units": "min",
+        "reset": "",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 1470,
+        "y": 1080,
+        "wires": [
+            [
+                "145c6ab9.121555"
+            ]
+        ]
+    },
+    {
+        "id": "145c6ab9.121555",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar mm = now.getMinutes();\nvar ss = now.getSeconds();\nvar timestamp = hh+\":\"+mm+\":\"+ss;\n\nglobal.set(\"Timestamp_C002\",timestamp);\n\nif (msg.payload) {\n    global.set(\"LastUpdate_C002\",\"Última atualização há mais de 2 minutos\");\n    msg.payload = \"Última atualização há mais de 2 minutos\";\n} else {\n    global.set(\"LastUpdate_C002\",\"\");\n    msg.payload = \"\";\n}\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 1080,
+        "wires": [
+            [
+                "9f5b1dee.f895e8"
+            ]
+        ]
+    },
+    {
+        "id": "63604ac4.bf331c",
+        "type": "ui_table",
+        "z": "81f37a56.e8a1c",
+        "group": "770ed9d7.147e8",
+        "name": "Sensores",
+        "order": 1,
+        "width": 21,
+        "height": 8,
+        "columns": [
+            {
+                "field": "device",
+                "title": "Dispositivo",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "MAC",
+                "title": "Endereço MAC",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "serie",
+                "title": "Número de Série",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "firmware",
+                "title": "Firmware",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "rssi",
+                "title": "RSSI",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "lastupdate",
+                "title": "Última atualização",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 760,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c60cbf70.cea1d",
+        "type": "ui_chart",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "group": "a9b4c957.659808",
+        "order": 3,
+        "width": 10,
+        "height": 4,
+        "label": "Umidade (%)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#ffba7e",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1570,
+        "y": 1100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1152ceca.7f79b1",
+        "type": "ui_chart",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "group": "a9b4c957.659808",
+        "order": 7,
+        "width": 10,
+        "height": 4,
+        "label": "[Gás] (ppm)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#ffba7e",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1570,
+        "y": 1140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1872f2cf.363fcd",
+        "type": "ui_table",
+        "z": "ec3d8487.9eaea",
+        "group": "a9b4c957.659808",
+        "name": "Evento",
+        "order": 9,
+        "width": 10,
+        "height": 4,
+        "columns": [
+            {
+                "field": "timestamp",
+                "title": "Hora",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "sensor",
+                "title": "Sensor",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "warning",
+                "title": "Evento",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 1560,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "7efdec48.cee114",
+        "type": "file",
+        "z": "55a9bdab.3c435c",
+        "name": "Warning log",
+        "filename": "warning_log.txt",
+        "appendNewline": true,
+        "createDir": false,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 690,
+        "y": 960,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "52dc9e7a.bf208",
+        "type": "debug",
+        "z": "55a9bdab.3c435c",
+        "name": "Warning log",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 690,
+        "y": 1000,
+        "wires": []
+    },
+    {
+        "id": "ec4c3e80.cc2ae8",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona temperatura",
+        "func": "var ans = global.get(\"Temp_C001\");\nvar warning, sensor;\n\nif (ans >= -40 && ans < 125) {\n    if (ans < -25) {\n        sensor = \"C001\";\n        warning = \"Temperatura muito baixa\";\n    } else if (msg.payload > 50) {\n        sensor = \"C001\";\n        warning = \"Temperatura muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"C001\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"C001\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            if (ans >= 125) {\n                sensor = \"C001\";\n                warning = \"Incêndio!\";\n            } else {\n                sensor = \"C001\";\n                warning = \"Sensor de temperatura: Leitura inválida (\"+ans+\" °C)\";\n            }\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 200,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "9ccd7728.fa0ad",
+        "type": "comment",
+        "z": "55a9bdab.3c435c",
+        "name": "Chão 1",
+        "info": "",
+        "x": 970,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "cad9d7dd.cf856",
+        "type": "rbe",
+        "z": "ec3d8487.9eaea",
+        "name": "10 minutos",
+        "func": "deadbandEq",
+        "gap": "10",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "compare",
+        "x": 410,
+        "y": 120,
+        "wires": [
+            [
+                "f909c40f.065c5"
+            ]
+        ]
+    },
+    {
+        "id": "cfef7439.f6be78",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Minuto atual",
+        "func": "var now = new Date();\nmsg.compare = now.getMinutes();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 120,
+        "wires": [
+            [
+                "cad9d7dd.cf856"
+            ]
+        ]
+    },
+    {
+        "id": "60178a11.230b34",
+        "type": "rbe",
+        "z": "ec3d8487.9eaea",
+        "name": "10 minutos",
+        "func": "deadbandEq",
+        "gap": "10",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "compare",
+        "x": 410,
+        "y": 200,
+        "wires": [
+            [
+                "a7e372a4.f7d8a8"
+            ]
+        ]
+    },
+    {
+        "id": "64487b3e.26a71c",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Minuto atual",
+        "func": "var now = new Date();\nmsg.compare = now.getMinutes();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 200,
+        "wires": [
+            [
+                "60178a11.230b34"
+            ]
+        ]
+    },
+    {
+        "id": "ee3a2a6e.aa58f",
+        "type": "rbe",
+        "z": "ec3d8487.9eaea",
+        "name": "10 minutos",
+        "func": "deadbandEq",
+        "gap": "10",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "compare",
+        "x": 410,
+        "y": 280,
+        "wires": [
+            [
+                "7231555c.82e4fc"
+            ]
+        ]
+    },
+    {
+        "id": "e3a22f63.98c8b",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Minuto atual",
+        "func": "var now = new Date();\nmsg.compare = now.getMinutes();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 280,
+        "wires": [
+            [
+                "ee3a2a6e.aa58f"
+            ]
+        ]
+    },
+    {
+        "id": "b10373c0.bf2f7",
+        "type": "rbe",
+        "z": "ec3d8487.9eaea",
+        "name": "10 minutos",
+        "func": "deadbandEq",
+        "gap": "10",
+        "start": "",
+        "inout": "out",
+        "septopics": true,
+        "property": "compare",
+        "x": 410,
+        "y": 360,
+        "wires": [
+            [
+                "c14e8c78.e1e31"
+            ]
+        ]
+    },
+    {
+        "id": "7b5d7901.6e72a8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Minuto atual",
+        "func": "var now = new Date();\nmsg.compare = now.getMinutes();\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 230,
+        "y": 360,
+        "wires": [
+            [
+                "b10373c0.bf2f7"
+            ]
+        ]
+    },
+    {
+        "id": "40e96718.d85c8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "SepHist",
+        "func": "if (msg.payload) {\n    var msg1 = {\"topic\":msg.payload.DeviceInfo.ID,\"timestamp\":Date.parse(msg.payload.Timestamp),\"payload\":msg.payload.Data.Temperature};\n    var msg2 = {\"topic\":msg.payload.DeviceInfo.ID,\"timestamp\":Date.parse(msg.payload.Timestamp),\"payload\":msg.payload.Data.Humidity};\n    var msg3 = {\"topic\":msg.payload.DeviceInfo.ID,\"timestamp\":Date.parse(msg.payload.Timestamp),\"payload\":msg.payload.Data.H2_H2S};\n    \n    var evento = context.get('evento') || [{\"timestamp\":\"\",\"sensor\":\"\",\"warning\":\"\"}];\n    \n    if (msg.payload.Data.SmokeDetection_Flood==true) {\n        switch (msg.payload.DeviceInfo.ID) {\n            case \"T001\":\n                evento.push({\"timestamp\":msg.payload.Timestamp,\"sensor\":\"T001\",\"warning\":\"Fumaça detectada\"});\n                break;\n            case \"T002\":\n                evento.push({\"timestamp\":msg.payload.Timestamp,\"sensor\":\"T002\",\"warning\":\"Fumaça detectada\"});\n                break;\n            case \"C001\":\n                evento.push({\"timestamp\":msg.payload.Timestamp,\"sensor\":\"C001\",\"warning\":\"Alagameto detectado\"});\n                break;\n            case \"C002\":\n                evento.push({\"timestamp\":msg.payload.Timestamp,\"sensor\":\"C002\",\"warning\":\"Alagameto detectado\"});\n                break;\n        }\n        context.set('evento',evento);\n    }\n    \n    // Fazer arrays separados para implementar o evento da desconexão\n    /*if (evento.length > 2) {\n        timestamp1 = Date.parse(evento[evento.length-2].timestamp);\n        timestamp2 = Date.parse(evento[evento.length-1].timestamp);\n        if (timestamp2-timestamp1>120000) {\n            evento.push({\"timestamp\":evento[evento.length-2].timestamp,\"sensor\":evento[evento.length-2].sensor,\"warning\":\"Desconexão detectada\"});\n            context.set('evento',evento);\n        }\n    }*/\n    \n    var msg4 = {\"payload\":evento};\n    \n    return [msg1, msg2, msg3, msg4];\n}",
+        "outputs": 4,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 1120,
+        "wires": [
+            [
+                "e85760fc.5a497"
+            ],
+            [
+                "c60cbf70.cea1d"
+            ],
+            [
+                "1152ceca.7f79b1"
+            ],
+            [
+                "1872f2cf.363fcd"
+            ]
+        ]
+    },
+    {
+        "id": "28f89d6c.43fbea",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona umidade",
+        "func": "var ans = global.get(\"Humi_C001\");\nvar sensor, warning;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans >= 95) {\n        sensor = \"C001\";\n        warning = \"Umidade muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"C001\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"C001\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            sensor = \"C001\";\n            warning = \"Sensor de umidade: Leitura inválida (\"+ans+\"%)\";\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 240,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "50823143.0d0a38",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona bateria",
+        "func": "var ans = global.get(\"Batt_C001\");\nvar warning, sensor;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans <= 15) {\n        warning = \"Nível baixo de bateria\";\n        sensor = \"C001\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    warning = \"Nível de bateria: Leitura inválida (\"+ans+\"%)\";\n    sensor = \"C001\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 120,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "6f685891.e95c38",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona gás",
+        "func": "var ans = global.get(\"Gas_C001\");\nvar warning, sensor;\n\nif (ans >= 0) {\n    warning = null;\n    sensor = null;\n    if (ans >= 100) {\n        warning = \"Nível de H2S muito alto - risco de envenenamento\";\n        sensor = \"C001\";\n        if (ans >= 43000) {\n            warning = \"Nível de H2S muito alto - risco de explosão e envenenamento\";\n        }\n    }\n} else {\n    warning = \"Sensor de gás: Leitura inválida (\"+ans+\" ppm)\";\n    sensor = \"C001\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 160,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "79b9a95d.a26518",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona alagamento",
+        "func": "var ans = global.get(\"Flood_C001\");\nvar sensor, warning;\nif (ans) {\n    warning = \"Alagamento detectado\";\n    sensor = \"C001\";\n} else {\n    warning = null;\n    sensor = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 280,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "7aae5d81.d26634",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona atualização",
+        "func": "var ans = global.get(\"LastUptade_C001\");\nvar sensor, warning;\n\nif (ans) {\n    sensor = \"C001\";\n    warning = \"Última atualização há mais de 2 minutos\";\n} else {\n    sensor = null;\n    warning = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 320,
+        "wires": [
+            [
+                "5cdaba8.02cd7c4"
+            ]
+        ]
+    },
+    {
+        "id": "aa87e784.5e4e1",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Batt_C002\",msg.payload);\n\nif(msg.payload >= 0 && msg.payload <= 100){\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 680,
+        "wires": [
+            [
+                "117518c0.27a937"
+            ]
+        ]
+    },
+    {
+        "id": "978e059d.7eb07",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Gas_C002\",msg.payload);\nif (msg.payload >= 0) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 760,
+        "wires": [
+            [
+                "c469f399.7eea58"
+            ]
+        ]
+    },
+    {
+        "id": "c0f047d6.203b4",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Temp_C002\",msg.payload);\nif (msg.payload >= -40 && msg.payload <= 125) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 840,
+        "wires": [
+            [
+                "965e59f5.76a0d8"
+            ]
+        ]
+    },
+    {
+        "id": "9f8b870e.d9cef",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Humi_C002\",msg.payload);\n\nif (msg.payload >= 0 && msg.payload <= 100) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 920,
+        "wires": [
+            [
+                "7582faee.431744"
+            ]
+        ]
+    },
+    {
+        "id": "64bdc266.0081f4",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Flood_C002\",msg.payload);\n\nif (msg.payload) {\n    msg.payload = \"Sim\";\n} else {\n    msg.payload = \"Não\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 1000,
+        "wires": [
+            [
+                "c986730a.0b4a7"
+            ]
+        ]
+    },
+    {
+        "id": "9f5b1dee.f895e8",
+        "type": "debug",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Last Update C002",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "fae0529c.dd8bd",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar mm = now.getMinutes();\nvar ss = now.getSeconds();\nvar timestamp = hh+\":\"+mm+\":\"+ss;\n\nglobal.set(\"Timestamp_C001\",timestamp);\n\nif (msg.payload) {\n    global.set(\"LastUpdate_C001\",\"Última atualização há mais de 2 minutos\");\n    msg.payload = \"Última atualização há mais de 2 minutos\";\n} else {\n    global.set(\"LastUpdate_C001\",\"\");\n    msg.payload = \"\";\n}\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 540,
+        "wires": [
+            [
+                "8dcd1e3a.427338"
+            ]
+        ]
+    },
+    {
+        "id": "6c188bab.4d767c",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Batt_C001\",msg.payload);\n\nif(msg.payload >= 0 && msg.payload <= 100){\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 140,
+        "wires": [
+            [
+                "80a606e3.e54d1"
+            ]
+        ]
+    },
+    {
+        "id": "c53654bf.6a598",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Gas_C001\",msg.payload);\nif (msg.payload >= 0) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 220,
+        "wires": [
+            [
+                "cd7bbb7d.b6f4c8"
+            ]
+        ]
+    },
+    {
+        "id": "329caf05.a2997",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Temp_C001\",msg.payload);\nif (msg.payload >= -40 && msg.payload <= 125) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 300,
+        "wires": [
+            [
+                "5e02983.a966768"
+            ]
+        ]
+    },
+    {
+        "id": "cd068706.e32d18",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Humi_C001\",msg.payload);\n\nif (msg.payload >= 0 && msg.payload <= 100) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 380,
+        "wires": [
+            [
+                "c95ca66c.ed2b6"
+            ]
+        ]
+    },
+    {
+        "id": "1d51362b.c851d2",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Flood_C001\",msg.payload);\n\nif (msg.payload) {\n    msg.payload = \"Sim\";\n} else {\n    msg.payload = \"Não\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1670,
+        "y": 460,
+        "wires": [
+            [
+                "82d04c61.86ff28"
+            ]
+        ]
+    },
+    {
+        "id": "8dcd1e3a.427338",
+        "type": "debug",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Last Update C001",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1850,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "39eb230b.0073b4",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar mm = now.getMinutes();\nvar ss = now.getSeconds();\nvar timestamp = hh+\":\"+mm+\":\"+ss;\n\nglobal.set(\"Timestamp_T001\",timestamp);\n\nif (msg.payload) {\n    global.set(\"LastUpdate_T001\",\"Última atualização há mais de 2 minutos\");\n    msg.payload = \"Última atualização há mais de 2 minutos\";\n} else {\n    global.set(\"LastUpdate_T001\",\"\");\n    msg.payload = \"\";\n}\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 540,
+        "wires": [
+            [
+                "2eb8a0e9.bcfae"
+            ]
+        ]
+    },
+    {
+        "id": "f9173075.a98be",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Batt_T001\",msg.payload);\n\nif(msg.payload >= 0 && msg.payload <= 100){\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 140,
+        "wires": [
+            [
+                "5fe4ac6.d8d3ad4"
+            ]
+        ]
+    },
+    {
+        "id": "3835ee84.30017a",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Gas_T001\",msg.payload);\nif (msg.payload >= 0) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 220,
+        "wires": [
+            [
+                "5835423f.300f04"
+            ]
+        ]
+    },
+    {
+        "id": "7295e3da.71fcc4",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Temp_T001\",msg.payload);\nif (msg.payload >= -40 && msg.payload <= 125) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 300,
+        "wires": [
+            [
+                "e7fe9a8d.206778"
+            ]
+        ]
+    },
+    {
+        "id": "f998df01.d5af78",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Humi_T001\",msg.payload);\n\nif (msg.payload >= 0 && msg.payload <= 100) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 380,
+        "wires": [
+            [
+                "2d3e0291.fccb06"
+            ]
+        ]
+    },
+    {
+        "id": "9b241a98.bd60b8",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Smoke_T001\",msg.payload);\n\nif (msg.payload) {\n    msg.payload = \"Sim\";\n} else {\n    msg.payload = \"Não\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 460,
+        "wires": [
+            [
+                "8b777234.1ef0f8"
+            ]
+        ]
+    },
+    {
+        "id": "2eb8a0e9.bcfae",
+        "type": "debug",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Last Update T001",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "5ff0849e.23229c",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "var now = new Date();\nvar hh = now.getHours();\nvar mm = now.getMinutes();\nvar ss = now.getSeconds();\nvar timestamp = hh+\":\"+mm+\":\"+ss;\n\nglobal.set(\"Timestamp_T002\",timestamp);\n\nif (msg.payload) {\n    global.set(\"LastUpdate_T002\",\"Última atualização há mais de 2 minutos\");\n    msg.payload = \"Última atualização há mais de 2 minutos\";\n} else {\n    global.set(\"LastUpdate_T002\",\"\");\n    msg.payload = \"\";\n}\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 1060,
+        "wires": [
+            [
+                "2a7b34cb.1293a4"
+            ]
+        ]
+    },
+    {
+        "id": "ed833378.34a4d",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Batt_T002\",msg.payload);\n\nif(msg.payload >= 0 && msg.payload <= 100){\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 660,
+        "wires": [
+            [
+                "45736264.0cc154"
+            ]
+        ]
+    },
+    {
+        "id": "5e9e8b83.069e3c",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Gas_T002\",msg.payload);\nif (msg.payload >= 0) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 740,
+        "wires": [
+            [
+                "ce3c5486.ddd488"
+            ]
+        ]
+    },
+    {
+        "id": "3557e538.25999a",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Temp_T002\",msg.payload);\nif (msg.payload >= -40 && msg.payload <= 125) {\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "d5dd2dc4.362c3"
+            ]
+        ]
+    },
+    {
+        "id": "14c698d6.99fe27",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Humi_T002\",msg.payload);\n\nif (msg.payload >= 0 && msg.payload <= 100) {\n    msg.payload = Math.round(msg.payload);\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 900,
+        "wires": [
+            [
+                "df7b56e7.8d5408"
+            ]
+        ]
+    },
+    {
+        "id": "4c8f3ba5.1edffc",
+        "type": "function",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Filtro",
+        "func": "global.set(\"Smoke_T002\",msg.payload);\n\nif (msg.payload) {\n    msg.payload = \"Sim\";\n} else {\n    msg.payload = \"Não\";\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 570,
+        "y": 980,
+        "wires": [
+            [
+                "e26cb0cb.b8fb4"
+            ]
+        ]
+    },
+    {
+        "id": "2a7b34cb.1293a4",
+        "type": "debug",
+        "z": "1bf3fce1.efe1bb",
+        "name": "Last Update T002",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 750,
+        "y": 1060,
+        "wires": []
+    },
+    {
+        "id": "e85760fc.5a497",
+        "type": "ui_chart",
+        "z": "ec3d8487.9eaea",
+        "name": "",
+        "group": "a9b4c957.659808",
+        "order": 1,
+        "width": 10,
+        "height": 4,
+        "label": "Temperatura (°C)",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "dd HH:mm",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "24",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#ffba7e",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "x": 1590,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "858689c8.72cdc",
+        "type": "inject",
+        "z": "ec3d8487.9eaea",
+        "name": "Limpa gráfico",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "[]",
+        "payloadType": "json",
+        "x": 1310,
+        "y": 1060,
+        "wires": [
+            [
+                "e85760fc.5a497",
+                "c60cbf70.cea1d",
+                "1152ceca.7f79b1"
+            ]
+        ]
+    },
+    {
+        "id": "b1cf5152.933588",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1560,
+        "wires": [
+            [
+                "83f58ad.e4cff78"
+            ]
+        ]
+    },
+    {
+        "id": "5d85500a.fd2918",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1520,
+        "wires": [
+            [
+                "b4bf14bb.6a6eb"
+            ]
+        ]
+    },
+    {
+        "id": "a3d88fbb.2ee4b8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1480,
+        "wires": [
+            [
+                "388af197.c0fcbe"
+            ]
+        ]
+    },
+    {
+        "id": "7a3ad14e.322f98",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1440,
+        "wires": [
+            [
+                "ef0398f.b553068"
+            ]
+        ]
+    },
+    {
+        "id": "9d08e529.416d9",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1400,
+        "wires": [
+            [
+                "d41f0c01.bf364"
+            ]
+        ]
+    },
+    {
+        "id": "7957085b.7ba028",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1360,
+        "wires": [
+            [
+                "29ca2ecc.194b12"
+            ]
+        ]
+    },
+    {
+        "id": "6e104243.6bb804",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1320,
+        "wires": [
+            [
+                "18f19b80.77aa9d"
+            ]
+        ]
+    },
+    {
+        "id": "26f4ac9b.8427c4",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1280,
+        "wires": [
+            [
+                "67500013.6dcce"
+            ]
+        ]
+    },
+    {
+        "id": "d57534cf.8ffd78",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1240,
+        "wires": [
+            [
+                "73605916.50891"
+            ]
+        ]
+    },
+    {
+        "id": "124d683f.25f698",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1200,
+        "wires": [
+            [
+                "609b17f3.cf03f8"
+            ]
+        ]
+    },
+    {
+        "id": "c38e59f8.411608",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1160,
+        "wires": [
+            [
+                "f30c51f9.958c8"
+            ]
+        ]
+    },
+    {
+        "id": "1023d75a.504689",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1120,
+        "wires": [
+            [
+                "cacc415.7b2794"
+            ]
+        ]
+    },
+    {
+        "id": "6f4d4710.1d56f8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1080,
+        "wires": [
+            [
+                "2c343dc8.0337b2"
+            ]
+        ]
+    },
+    {
+        "id": "f47e32ff.6de9d",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1040,
+        "wires": [
+            [
+                "48effa4d.bf2c8c"
+            ]
+        ]
+    },
+    {
+        "id": "ca15196.7444668",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1000,
+        "wires": [
+            [
+                "e0e92375.0bef28"
+            ]
+        ]
+    },
+    {
+        "id": "4d081ee8.a33b18",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 960,
+        "wires": [
+            [
+                "7c2ac9ba.0bc7e8"
+            ]
+        ]
+    },
+    {
+        "id": "3d9a3ad2.b4257e",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 920,
+        "wires": [
+            [
+                "2d4782e8.7d485e"
+            ]
+        ]
+    },
+    {
+        "id": "7bbaf42d.ba2d34",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 880,
+        "wires": [
+            [
+                "88871d4c.154c18"
+            ]
+        ]
+    },
+    {
+        "id": "aa815a85.f88cb",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 840,
+        "wires": [
+            [
+                "ba87e2bd.aca008"
+            ]
+        ]
+    },
+    {
+        "id": "66fe19bf.6b8da8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 800,
+        "wires": [
+            [
+                "ae0874f6.6d5168"
+            ]
+        ]
+    },
+    {
+        "id": "ffbb4396.418aa8",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 760,
+        "wires": [
+            [
+                "dec075d5.c73e18"
+            ]
+        ]
+    },
+    {
+        "id": "b8bf2fd2.5c9b28",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 720,
+        "wires": [
+            [
+                "cd096e3a.6f9ba8"
+            ]
+        ]
+    },
+    {
+        "id": "e623629f.22bd98",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 680,
+        "wires": [
+            [
+                "45942eca.a2111"
+            ]
+        ]
+    },
+    {
+        "id": "2078a730.bb6808",
+        "type": "function",
+        "z": "ec3d8487.9eaea",
+        "name": "Ignora vazio",
+        "func": "if (msg.payload == \"\") {\n    msg = null;\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 640,
+        "wires": [
+            [
+                "be3e4407.e95fd"
+            ]
+        ]
+    },
+    {
+        "id": "a2f15f7f.8ff3b8",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona temperatura",
+        "func": "var ans = global.get(\"Temp_C002\");\nvar warning, sensor;\n\nif (ans >= -40 && ans < 125) {\n    if (ans < -25) {\n        sensor = \"C002\";\n        warning = \"Temperatura muito baixa\";\n    } else if (msg.payload > 50) {\n        sensor = \"C002\";\n        warning = \"Temperatura muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"C002\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"C002\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            if (ans >= 125) {\n                sensor = \"C002\";\n                warning = \"Incêndio!\";\n            } else {\n                sensor = \"C002\";\n                warning = \"Sensor de temperatura: Leitura inválida (\"+ans+\" °C)\";\n            }\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 560,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "9e578136.92f3d",
+        "type": "comment",
+        "z": "55a9bdab.3c435c",
+        "name": "Chão 2",
+        "info": "",
+        "x": 970,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "bb79acb9.339468",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona umidade",
+        "func": "var ans = global.get(\"Humi_C002\");\nvar sensor, warning;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans >= 95) {\n        sensor = \"C002\";\n        warning = \"Umidade muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"C002\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"C002\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            sensor = \"C002\";\n            warning = \"Sensor de umidade: Leitura inválida (\"+ans+\"%)\";\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 600,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "b331b86b.cca488",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona bateria",
+        "func": "var ans = global.get(\"Batt_C002\");\nvar warning, sensor;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans <= 15) {\n        warning = \"Nível baixo de bateria\";\n        sensor = \"C002\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    warning = \"Nível de bateria: Leitura inválida (\"+ans+\"%)\";\n    sensor = \"C002\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1310,
+        "y": 480,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "5a44cf9b.6b3ef8",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona gás",
+        "func": "var ans = global.get(\"Gas_C002\");\nvar warning, sensor;\n\nif (ans >= 0) {\n    warning = null;\n    sensor = null;\n    if (ans >= 100) {\n        warning = \"Nível de H2S muito alto - risco de envenenamento\";\n        sensor = \"C002\";\n        if (ans >= 43000) {\n            warning = \"Nível de H2S muito alto - risco de explosão e envenenamento\";\n        }\n    }\n} else {\n    warning = \"Sensor de gás: Leitura inválida (\"+ans+\" ppm)\";\n    sensor = \"C002\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1300,
+        "y": 520,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "80bd6d85.6364e8",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona alagamento",
+        "func": "var ans = global.get(\"Flood_C002\");\nvar sensor, warning;\nif (ans) {\n    warning = \"Alagamento detectado\";\n    sensor = \"C002\";\n} else {\n    warning = null;\n    sensor = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 640,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "5b93d339.9e2f4c",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona atualização",
+        "func": "var ans = global.get(\"LastUptade_C002\");\nvar sensor, warning;\n\nif (ans) {\n    sensor = \"C002\";\n    warning = \"Última atualização há mais de 2 minutos\";\n} else {\n    sensor = null;\n    warning = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1330,
+        "y": 680,
+        "wires": [
+            [
+                "8a119e13.e4e148"
+            ]
+        ]
+    },
+    {
+        "id": "6d435ec6.2fe2",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona temperatura",
+        "func": "var ans = global.get(\"Temp_T001\");\nvar warning, sensor;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans >= -40 && ans < 125) {\n        if (ans < -25) {\n            sensor = \"T001\";\n            warning = \"Temperatura muito baixa\";\n        } else if (msg.payload > 50) {\n            sensor = \"T001\";\n            warning = \"Temperatura muito alta\";\n        } else {\n            sensor = null;\n            warning = null;\n        }\n    } else {\n        switch (msg.payload) {\n            case 998:\n                sensor = \"T001\";\n                warning = \"Erro de comunicação I2C\";\n                break;\n            case 999:\n                sensor = \"T001\";\n                warning = \"Erro de CRC\";\n                break;\n            default:\n                if (ans >= 125) {\n                    sensor = \"T001\";\n                    warning = \"Incêndio!\";\n                } else {\n                    sensor = \"T001\";\n                    warning = \"Sensor de temperatura: Leitura inválida (\"+ans+\" °C)\";\n                }\n        }\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 200,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "ceb381ea.c583c8",
+        "type": "comment",
+        "z": "55a9bdab.3c435c",
+        "name": "Teto 1",
+        "info": "",
+        "x": 90,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "2d7ac29.38d173e",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona umidade",
+        "func": "var ans = global.get(\"Humi_T001\");\nvar sensor, warning;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans >= 0 && ans <= 100) {\n        if (ans >= 95) {\n            sensor = \"T001\";\n            warning = \"Umidade muito alta\";\n        } else {\n            sensor = null;\n            warning = null;\n        }\n    } else {\n        switch (msg.payload) {\n            case 998:\n                sensor = \"T001\";\n                warning = \"Erro de comunicação I2C\";\n                break;\n            case 999:\n                sensor = \"T001\";\n                warning = \"Erro de CRC\";\n                break;\n            default:\n                sensor = \"T001\";\n                warning = \"Sensor de umidade: Leitura inválida (\"+ans+\"%)\";\n        }\n    }\n}\n\n\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 240,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "377de7d9.ec581",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona bateria",
+        "func": "var ans = global.get(\"Batt_T001\");\nvar warning, sensor;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans >= 0 && ans <= 100) {\n        if (ans <= 15) {\n            warning = \"Nível baixo de bateria\";\n            sensor = \"T001\";\n        } else {\n            sensor = null;\n            warning = null;\n        }\n    } else {\n        warning = \"Nível de bateria: Leitura inválida (\"+ans+\"%)\";\n        sensor = \"T001\";\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 120,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "2f383281.cd6736",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona gás",
+        "func": "var ans = global.get(\"Gas_T001\");\nvar warning, sensor;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans >= 0) {\n        warning = null;\n        sensor = null;\n        if (ans >= 41000) {\n            warning = \"Nível de H2 muito alto - risco de explosão\";\n            sensor = \"T001\";\n        }\n    } else {\n        warning = \"Sensor de gás: Leitura inválida (\"+ans+\" ppm)\";\n        sensor = \"T001\";\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 160,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "ea4dd0b7.25025",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona alagamento",
+        "func": "var ans = global.get(\"Flood_T001\");\nvar sensor, warning;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans) {\n        warning = \"Alagamento detectado\";\n        sensor = \"T001\";\n    } else {\n        warning = null;\n        sensor = null;\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 280,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "7bbf37b5.eb8a28",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona atualização",
+        "func": "var ans = global.get(\"LastUptade_T001\");\nvar sensor, warning;\n\nif (ans == undefined) {\n    sensor = null;\n    warning = null;\n} else {\n    if (ans) {\n        sensor = \"T001\";\n        warning = \"Última atualização há mais de 2 minutos\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 320,
+        "wires": [
+            [
+                "8b0e9d19.638f38"
+            ]
+        ]
+    },
+    {
+        "id": "4afcf22a.c7844c",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona temperatura",
+        "func": "var ans = global.get(\"Temp_T002\");\nvar warning, sensor;\n\nif (ans >= -40 && ans < 125) {\n    if (ans < -25) {\n        sensor = \"T002\";\n        warning = \"Temperatura muito baixa\";\n    } else if (msg.payload > 50) {\n        sensor = \"T002\";\n        warning = \"Temperatura muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"T002\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"T002\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            if (ans >= 125) {\n                sensor = \"T002\";\n                warning = \"Incêndio!\";\n            } else {\n                sensor = \"T002\";\n                warning = \"Sensor de temperatura: Leitura inválida (\"+ans+\" °C)\";\n            }\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 560,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "45fffff2.c6f2",
+        "type": "comment",
+        "z": "55a9bdab.3c435c",
+        "name": "Teto 2",
+        "info": "",
+        "x": 90,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "7207f82f.4edec",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona umidade",
+        "func": "var ans = global.get(\"Humi_T002\");\nvar sensor, warning;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans >= 95) {\n        sensor = \"T002\";\n        warning = \"Umidade muito alta\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    switch (msg.payload) {\n        case 998:\n            sensor = \"T002\";\n            warning = \"Erro de comunicação I2C\";\n            break;\n        case 999:\n            sensor = \"T002\";\n            warning = \"Erro de CRC\";\n            break;\n        default:\n            sensor = \"T002\";\n            warning = \"Sensor de umidade: Leitura inválida (\"+ans+\"%)\";\n    }\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 440,
+        "y": 600,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "3515c67d.3d5eda",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona bateria",
+        "func": "var ans = global.get(\"Batt_T002\");\nvar warning, sensor;\n\nif (ans >= 0 && ans <= 100) {\n    if (ans <= 15) {\n        warning = \"Nível baixo de bateria\";\n        sensor = \"T002\";\n    } else {\n        sensor = null;\n        warning = null;\n    }\n} else {\n    warning = \"Nível de bateria: Leitura inválida (\"+ans+\"%)\";\n    sensor = \"T002\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "eba2800a.524428",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona gás",
+        "func": "var ans = global.get(\"Gas_T002\");\nvar warning, sensor;\n\nif (ans >= 0) {\n    warning = null;\n    sensor = null;\n    if (ans >= 41000) {\n        warning = \"Nível de H2 muito alto - risco de explosão\";\n        sensor = \"T002\";\n    }\n} else {\n    warning = \"Sensor de gás: Leitura inválida (\"+ans+\" ppm)\";\n    sensor = \"T002\";\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 420,
+        "y": 520,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "f882c1b0.24b7c",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona alagamento",
+        "func": "var ans = global.get(\"Flood_T002\");\nvar sensor, warning;\nif (ans) {\n    warning = \"Alagamento detectado\";\n    sensor = \"T002\";\n} else {\n    warning = null;\n    sensor = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 640,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "1342aa13.564006",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Condiciona atualização",
+        "func": "var ans = global.get(\"LastUptade_T002\");\nvar sensor, warning;\n\nif (ans) {\n    sensor = \"T002\";\n    warning = \"Última atualização há mais de 2 minutos\";\n} else {\n    sensor = null;\n    warning = null;\n}\n\nmsg.payload = {\"sensor\":sensor,\"warning\":warning};\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 450,
+        "y": 680,
+        "wires": [
+            [
+                "808bcd84.2f536"
+            ]
+        ]
+    },
+    {
+        "id": "fb6e650b.719f88",
+        "type": "inject",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "x": 190,
+        "y": 920,
+        "wires": [
+            [
+                "15d52149.47701f"
+            ]
+        ]
+    },
+    {
+        "id": "193bab2.922c155",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Concatena",
+        "func": "var table = context.get('table') || [{\"sensor\":\"\",\"warning\":\"\"}];\n\nif (msg.payload.sensor && msg.payload.warning) {\n    table.push({\"sensor\":msg.payload.sensor,\"warning\":msg.payload.warning});\n    context.set('table',table);\n}\n\nvar vetor = {\"payload\":table};\n\nreturn vetor;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 470,
+        "y": 920,
+        "wires": [
+            [
+                "80634363.0a7a9",
+                "7efdec48.cee114",
+                "52dc9e7a.bf208",
+                "e3679a76.a179c"
+            ]
+        ]
+    },
+    {
+        "id": "80634363.0a7a9",
+        "type": "ui_table",
+        "z": "55a9bdab.3c435c",
+        "group": "d9653907.eaf768",
+        "name": "Advertências",
+        "order": 1,
+        "width": 21,
+        "height": 8,
+        "columns": [
+            {
+                "field": "sensor",
+                "title": "Sensor",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            },
+            {
+                "field": "warning",
+                "title": "Advertência",
+                "width": "",
+                "align": "left",
+                "formatter": "plaintext",
+                "formatterParams": {
+                    "target": "_blank"
+                }
+            }
+        ],
+        "outputs": 0,
+        "cts": false,
+        "x": 690,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "9be50983.a885e",
+        "type": "link in",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "15d52149.47701f"
+        ],
+        "x": 215,
+        "y": 220,
+        "wires": [
+            [
+                "377de7d9.ec581",
+                "2f383281.cd6736",
+                "6d435ec6.2fe2",
+                "2d7ac29.38d173e",
+                "ea4dd0b7.25025",
+                "7bbf37b5.eb8a28"
+            ]
+        ]
+    },
+    {
+        "id": "8b0e9d19.638f38",
+        "type": "link out",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "694d1e72.8211c"
+        ],
+        "x": 695,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "15d52149.47701f",
+        "type": "link out",
+        "z": "55a9bdab.3c435c",
+        "name": "Adv_out",
+        "links": [
+            "9be50983.a885e",
+            "d9dac05b.86729",
+            "1106a212.22fc06",
+            "29aea0c5.391458",
+            "ed122f2a.875ae8"
+        ],
+        "x": 285,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "694d1e72.8211c",
+        "type": "link in",
+        "z": "55a9bdab.3c435c",
+        "name": "Adv_in",
+        "links": [
+            "8b0e9d19.638f38",
+            "808bcd84.2f536",
+            "5cdaba8.02cd7c4",
+            "8a119e13.e4e148"
+        ],
+        "x": 355,
+        "y": 920,
+        "wires": [
+            [
+                "193bab2.922c155"
+            ]
+        ]
+    },
+    {
+        "id": "d9dac05b.86729",
+        "type": "link in",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "15d52149.47701f"
+        ],
+        "x": 215,
+        "y": 580,
+        "wires": [
+            [
+                "3515c67d.3d5eda",
+                "eba2800a.524428",
+                "4afcf22a.c7844c",
+                "7207f82f.4edec",
+                "f882c1b0.24b7c",
+                "1342aa13.564006"
+            ]
+        ]
+    },
+    {
+        "id": "808bcd84.2f536",
+        "type": "link out",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "694d1e72.8211c"
+        ],
+        "x": 695,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "1106a212.22fc06",
+        "type": "link in",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "15d52149.47701f"
+        ],
+        "x": 1095,
+        "y": 220,
+        "wires": [
+            [
+                "50823143.0d0a38",
+                "6f685891.e95c38",
+                "ec4c3e80.cc2ae8",
+                "28f89d6c.43fbea",
+                "79b9a95d.a26518",
+                "7aae5d81.d26634"
+            ]
+        ]
+    },
+    {
+        "id": "29aea0c5.391458",
+        "type": "link in",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "15d52149.47701f"
+        ],
+        "x": 1095,
+        "y": 580,
+        "wires": [
+            [
+                "b331b86b.cca488",
+                "5a44cf9b.6b3ef8",
+                "a2f15f7f.8ff3b8",
+                "bb79acb9.339468",
+                "80bd6d85.6364e8",
+                "5b93d339.9e2f4c"
+            ]
+        ]
+    },
+    {
+        "id": "5cdaba8.02cd7c4",
+        "type": "link out",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "694d1e72.8211c"
+        ],
+        "x": 1575,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "8a119e13.e4e148",
+        "type": "link out",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "links": [
+            "694d1e72.8211c"
+        ],
+        "x": 1575,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "e3679a76.a179c",
+        "type": "split",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "splt": "\\n",
+        "spltType": "str",
+        "arraySplt": 1,
+        "arraySpltType": "len",
+        "stream": false,
+        "addname": "",
+        "x": 670,
+        "y": 880,
+        "wires": [
+            [
+                "2d0c9ff6.d4816"
+            ]
+        ]
+    },
+    {
+        "id": "2d0c9ff6.d4816",
+        "type": "function",
+        "z": "55a9bdab.3c435c",
+        "name": "Formata",
+        "func": "var sensor = msg.payload.sensor;\nvar warning = msg.payload.warning;\n\nmsg.payload = sensor+\": \"+warning;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 880,
+        "wires": [
+            [
+                "adcf6eb3.5ef7b8"
+            ]
+        ]
+    },
+    {
+        "id": "a5790ba3.37a558",
+        "type": "comment",
+        "z": "55a9bdab.3c435c",
+        "name": "Fluxo de advertências",
+        "info": "",
+        "x": 140,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "adcf6eb3.5ef7b8",
+        "type": "debug",
+        "z": "55a9bdab.3c435c",
+        "name": "",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1020,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "d6155361.8a0b7",
+        "type": "ui_toast",
+        "z": "55a9bdab.3c435c",
+        "position": "top right",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "topic": "",
+        "name": "",
+        "x": 1040,
+        "y": 880,
+        "wires": []
+    },
+    {
+        "id": "3a387a69.d5c9ce",
+        "type": "link in",
+        "z": "81f37a56.e8a1c",
+        "name": "",
+        "links": [
+            "6c2a0533.745d7c"
+        ],
+        "x": 135,
+        "y": 120,
+        "wires": [
+            [
+                "e608061.5314ff8"
+            ]
+        ]
+    },
+    {
+        "id": "4ae62512.005474",
+        "type": "link in",
+        "z": "81f37a56.e8a1c",
+        "name": "",
+        "links": [
+            "2908de2.7da3722"
+        ],
+        "x": 135,
+        "y": 200,
+        "wires": [
+            [
+                "ce1b5184.eb37d8"
+            ]
+        ]
+    },
+    {
+        "id": "6cc402b.b1ba37c",
+        "type": "link in",
+        "z": "81f37a56.e8a1c",
+        "name": "",
+        "links": [
+            "74eb8f00.b4d1c8"
+        ],
+        "x": 135,
+        "y": 280,
+        "wires": [
+            [
+                "268e445b.978cb4"
+            ]
+        ]
+    },
+    {
+        "id": "45d0ba5b.9039f4",
+        "type": "link in",
+        "z": "81f37a56.e8a1c",
+        "name": "",
+        "links": [
+            "642c23c5.bc26b4"
+        ],
+        "x": 135,
+        "y": 360,
+        "wires": [
+            [
+                "9b867e04.93e948"
+            ]
+        ]
+    },
+    {
+        "id": "e85f40f4.d36c3",
+        "type": "comment",
+        "z": "81f37a56.e8a1c",
+        "name": "Status dos sensores",
+        "info": "",
+        "x": 130,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "ac7a4b28.aa1848",
+        "type": "function",
+        "z": "81f37a56.e8a1c",
+        "name": "HandleStatus",
+        "func": "var sensor1 = context.get('sensor1') || {\"device\":\"\",\"MAC\":\"\",\"serie\":\"\",\"firmware\":\"\",\"rssi\":\"\",\"lastupdate\":\"\"};\nvar sensor2 = context.get('sensor2') || {\"device\":\"\",\"MAC\":\"\",\"serie\":\"\",\"firmware\":\"\",\"rssi\":\"\",\"lastupdate\":\"\"};\nvar sensor3 = context.get('sensor3') || {\"device\":\"\",\"MAC\":\"\",\"serie\":\"\",\"firmware\":\"\",\"rssi\":\"\",\"lastupdate\":\"\"};\nvar sensor4 = context.get('sensor4') || {\"device\":\"\",\"MAC\":\"\",\"serie\":\"\",\"firmware\":\"\",\"rssi\":\"\",\"lastupdate\":\"\"};\n\nswitch (msg.payload.device) {\n    case \"T001\":\n        context.set('sensor1',msg.payload);\n        break;\n    case \"T002\":\n        context.set('sensor2',msg.payload);\n        break;\n    case \"C001\":\n        context.set('sensor3',msg.payload);\n        break;\n    case \"C002\":\n        context.set('sensor4',msg.payload);\n        break;\n}\n\nmsg.payload = [sensor1,sensor2,sensor3,sensor4];\n\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 240,
+        "wires": [
+            [
+                "63604ac4.bf331c"
+            ]
+        ]
+    },
+    {
+        "id": "e608061.5314ff8",
+        "type": "function",
+        "z": "81f37a56.e8a1c",
+        "name": "CondicionaStatus",
+        "func": "var device, MAC, serie, firmware, rssi, lastupdate;\n\ndevice = msg.payload.DeviceInfo.ID;\nMAC = msg.payload.DeviceInfo.Address;\nserie = msg.payload.DeviceInfo.Serial_Number;\nfirmware = msg.payload.DeviceInfo.Firmware;\nrssi = \"not implemented (yet)\";\nlastupdate = msg.payload.Timestamp;\n\nmsg.payload = {\"device\":device,\"MAC\":MAC,\"serie\":serie,\"firmware\":firmware,\"rssi\":rssi,\"lastupdate\":lastupdate}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 120,
+        "wires": [
+            [
+                "ac7a4b28.aa1848"
+            ]
+        ]
+    },
+    {
+        "id": "ce1b5184.eb37d8",
+        "type": "function",
+        "z": "81f37a56.e8a1c",
+        "name": "CondicionaStatus",
+        "func": "var device, MAC, serie, firmware, rssi, lastupdate;\n\ndevice = msg.payload.DeviceInfo.ID;\nMAC = msg.payload.DeviceInfo.Address;\nserie = msg.payload.DeviceInfo.Serial_Number;\nfirmware = msg.payload.DeviceInfo.Firmware;\nrssi = \"not implemented (yet)\";\nlastupdate = msg.payload.Timestamp;\n\nmsg.payload = {\"device\":device,\"MAC\":MAC,\"serie\":serie,\"firmware\":firmware,\"rssi\":rssi,\"lastupdate\":lastupdate}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 200,
+        "wires": [
+            [
+                "ac7a4b28.aa1848"
+            ]
+        ]
+    },
+    {
+        "id": "268e445b.978cb4",
+        "type": "function",
+        "z": "81f37a56.e8a1c",
+        "name": "CondicionaStatus",
+        "func": "var device, MAC, serie, firmware, rssi, lastupdate;\n\ndevice = msg.payload.DeviceInfo.ID;\nMAC = msg.payload.DeviceInfo.Address;\nserie = msg.payload.DeviceInfo.Serial_Number;\nfirmware = msg.payload.DeviceInfo.Firmware;\nrssi = \"not implemented (yet)\";\nlastupdate = msg.payload.Timestamp;\n\nmsg.payload = {\"device\":device,\"MAC\":MAC,\"serie\":serie,\"firmware\":firmware,\"rssi\":rssi,\"lastupdate\":lastupdate}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 280,
+        "wires": [
+            [
+                "ac7a4b28.aa1848"
+            ]
+        ]
+    },
+    {
+        "id": "9b867e04.93e948",
+        "type": "function",
+        "z": "81f37a56.e8a1c",
+        "name": "CondicionaStatus",
+        "func": "var device, MAC, serie, firmware, rssi, lastupdate;\n\ndevice = msg.payload.DeviceInfo.ID;\nMAC = msg.payload.DeviceInfo.Address;\nserie = msg.payload.DeviceInfo.Serial_Number;\nfirmware = msg.payload.DeviceInfo.Firmware;\nrssi = \"not implemented (yet)\";\nlastupdate = msg.payload.Timestamp;\n\nmsg.payload = {\"device\":device,\"MAC\":MAC,\"serie\":serie,\"firmware\":firmware,\"rssi\":rssi,\"lastupdate\":lastupdate}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 360,
+        "wires": [
+            [
+                "ac7a4b28.aa1848"
+            ]
+        ]
+    }
+]
